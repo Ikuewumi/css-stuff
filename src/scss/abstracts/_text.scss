@@ -1,0 +1,16 @@
+//To work with typography stuff
+$cases: (
+   l: lowercase,
+   u: uppercase,
+   c: capitalize
+);
+
+@each $prop, $value in $cases {
+   .case-#{$prop} {
+      text-transform: $value;
+   }
+}
+
+.text-underline {
+   text-decoration: underline;
+}

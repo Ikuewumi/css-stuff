@@ -1,0 +1,31 @@
+[data-date="191022"] {
+   width: 100%;
+   height: 100%;
+   background: #000;
+
+   h1 {
+      position: relative;
+      color: transparent;
+      -webkit-text-stroke: 0.5px #ffffff70;
+      line-height: 0.9;
+      transition: 0.2s ease;
+      
+      &::before {
+         transition: 0.2s ease;
+         position: absolute;
+         content: attr(data-text);
+         inset: 0 auto auto 0;
+         // display: none;
+         color: #fff;
+         border-right: 10px solid #fff;
+         width: 0px;
+         overflow: hidden;
+      }
+
+
+      &:hover::before {
+         width: 100%;
+         filter: drop-shadow(0 0 5px #fff);
+      }
+   }
+}

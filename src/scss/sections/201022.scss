@@ -1,0 +1,12 @@
+[data-date="201022"] {
+   width: min(400px, 90vw);
+   .profile {
+      width: 100%;
+      background: #fff;
+      border-radius: 0.5vmax;
+      >img {
+         width: 40%;
+         margin-top: -20%;
+      }
+   }
+}

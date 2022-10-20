@@ -1,0 +1,32 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   width: 100vw;
+   min-height: 100vh;
+   overflow-x: hidden;
+   font-family: var(--f-sans);
+}
+
+#app,#app>section {
+   width: 100vw;
+   height: 100vh;
+}
+
+#app {
+   overflow-x: hidden;
+   scroll-snap-type: y mandatory;
+}
+
+#app>section {
+   scroll-snap-align: start;
+   display: grid;
+   place-items: center;
+   overflow-y: auto;
+}
+
+.cursor {
+   cursor: pointer;
+}
