@@ -14,3 +14,15 @@ $cases: (
 .text-underline {
    text-decoration: underline;
 }
+
+$alignments: (
+   l: left,
+   r: right,
+   c: center
+);
+
+@each $prop, $value in $alignments {
+   .text-align-#{$prop} {
+      text-align: $value;
+   }
+}

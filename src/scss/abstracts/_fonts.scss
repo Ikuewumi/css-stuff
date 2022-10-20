@@ -4,7 +4,7 @@ $fonts: (
    big: "Cooper, Alfa Slab One",
    mono: "Cascadia Code, PT Mono",
    serif: "Stika",
-   slab: "Josefin Slab Serif"
+   slab: "Abril Fatface"
 );
 
 @each $prop, $value in $fonts {
@@ -32,11 +32,12 @@ $weights: (
 $font-sizes: (
    tiny: clamp(0.7rem, 0.7rem + 1vw, 0.9rem),
    mid: clamp(1rem, 1rem + 2vw, 1.3rem),
+   s1: clamp(1.4rem, 1.4rem + 2vw, 1.7rem),
    big: clamp(3rem, 3rem + 5vw, 5rem)
 );
 
 @each $prop, $value in $font-sizes {
-   .f-#{$prop} {
+   .size-#{$prop} {
       font-size: var(--f-size-#{$prop});
    }
 }

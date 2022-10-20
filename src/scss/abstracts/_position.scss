@@ -85,3 +85,9 @@ $alignments: (
       }
    }   
 }
+
+@for $i from 1 to 20 {
+   .g-#{$i} {
+      gap: var(--size-#{$i});
+   }
+}
