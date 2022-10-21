@@ -1,4 +1,6 @@
 [data-date="201022"] {
+   --_t: 0.2s;
+
    width: 100%;
    height: 100%;
    background: linear-gradient(
@@ -15,15 +17,15 @@
       border-radius: 0.5vmax;
       padding-block-end: 2.5vmax;
       font-family: var(--f-poppins);
-      transition: 1s ease-in;
+      // transition:  ease-in;
       // height: 176px;
 
       >img {
          width: 40%;
          margin-top: -20%;
          border-radius: 0.5vmax;
-         transition: 0.2s;
-         transition-delay: 0.1s;
+         transition: var(--_t);
+         // transition-delay: 0.1s;
       }
 
       &-basics {
@@ -34,11 +36,10 @@
 
 
       &-more {
-         // visibility: hidden;
+         transform: scaleY(0);
+         transform-origin: top;
          height: 0;
-         // opacity: 0;
-         transition: 0.7s ease-out;
-         transition-delay: 0.2s;
+         transition: var(--_t) ease-out;
          overflow: hidden;
 
 
@@ -78,8 +79,7 @@
       
       &:hover > .profile-more {
          height: auto;
-         opacity: 1;
-         visibility: visible;
+         transform: scaleY(1);
       }
 
       &:hover {
