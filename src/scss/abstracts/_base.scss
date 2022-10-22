@@ -27,6 +27,12 @@ body {
    overflow-y: auto;
 }
 
+
+#app>section>.container {
+   width: 100%;
+   height: 100%;
+}
+
 .cursor {
    cursor: pointer;
 }
