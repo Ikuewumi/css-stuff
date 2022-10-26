@@ -21,7 +21,7 @@ $weights: (
    normal: 400,
    mid: 500,
    bold: 700,
-   black: 900
+   "black": 900
 );
 
 @each $prop, $value in $weights {
